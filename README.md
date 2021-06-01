@@ -20,12 +20,12 @@ There is two data file in the dataset. <br>
 Three data file prepared to develop the streamlit application. 
 
 ### anime.csv
-Contain basic information of the anime. Indexed by 'anime_id', followed by the name, genre and rating. 
+Contain basic information of the anime. Indexed by 'anime_id', followed by the name, genre and rating. <br>
 <img src="image/anime_csv.png" width="600">
 
 ### anime_genre.csv
-Data file generated from Anime.csv for similarity distance measure. Genre and type columns are One-Hot Encoded and rating is scaled to 0-1, indexed by 'anime_id'.
-<img src="image/anime_genre.png" width="400">
+Data file generated from Anime.csv for similarity distance measure. Genre and type columns are One-Hot Encoded and rating is scaled to 0-1, indexed by 'anime_id'.<br>
+<img src="image/anime_genre.png" width="300">
 
 ### rating.csv
 No preprocessing on this datafile.
@@ -50,8 +50,8 @@ Suggestion for re-watch will be at the bottom. <br>
 
 ## Next Step:
 1. User Input: 
-    Instead of input favourite anime, application can be modified to input parameters of preferred genre for more flexibility on the recommendation on anime. 
+    Instead of input favourite anime, application can be modified to input parameters of preferred genre for more flexibility on the recommendation on anime. <br>
 
 2. Rating:
-    A content-based recommendation is used in this application as the data file has detailed genre and type information of each anime. On the other hand, the data file for individual rating is not completed as a lot of the users didn't rate the anime that they have watched (with a lot of value '-1'). A collaborative filtering recommendation can be develop if a more detailed rating data obtained from the users in the future.
+    A content-based recommendation is used in this application as the data file has detailed genre and type information of each anime. On the other hand, the data file for individual rating is not completed as a lot of the users didn't rate the anime that they have watched (with a lot of value '-1'). A collaborative filtering recommendation can be develop if a more detailed rating data obtained from the users in the future. 
 
