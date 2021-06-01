@@ -58,16 +58,20 @@ st.title('Recommendation')
 recommendation = anime_recommender(distance, anime[anime['name']==anime_name].index[0], num_re)
 
 #Display result
+# for first-time user 
 if user_id not in rating['user_id']: 
     st.subheader('You may like the below animes...')
     for r in recommendation['anime_id']:
         result(r)
+
+# for user with watching record
 else: 
     watched = rating[rating['user_id']==user_id]
     st.subheader('You may like the below animes...')
     for r in recommendation['anime_id']:
         if r not in watched['anime_id']:
             result(r)
+
     st.subheader('You may also re-watched the below animes...')
     for r in recommendation['anime_id']:
         if r in watched['anime_id']:
