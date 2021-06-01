@@ -6,6 +6,7 @@ import seaborn as sns
 import streamlit as st
 from scipy.spatial.distance import euclidean, cityblock, cosine
 
+# read data file
 def get_data():
     anime = pd.read_csv('anime_data/anime.csv')
     anime=anime.set_index('anime_id')
@@ -14,7 +15,7 @@ def get_data():
     rating = pd.read_csv('anime_data/rating.csv')
     return anime, anime_genre, rating
 
-
+# generate recommendation
 def anime_recommender(distance, anime_id, N):
     # dataframe to store distance between animes 
     anime_distance = pd.DataFrame (data = anime_genre.index)
@@ -33,6 +34,7 @@ def anime_recommender(distance, anime_id, N):
     
     return (anime_distance.head(N))
 
+# print out anime information
 def result(id):
     st.text('Title: ' + anime.loc[r, 'name']+ '      Rating: '+ str(anime.loc[r, 'rating']))
     st.text('Genre: '+ anime.loc[r, 'genre'])
@@ -55,6 +57,7 @@ user_id = st.sidebar.number_input('Enter your user id: (key 0 if you are not a m
 st.title('Recommendation')
 recommendation = anime_recommender(distance, anime[anime['name']==anime_name].index[0], num_re)
 
+#Display result
 if user_id not in rating['user_id']: 
     st.subheader('You may like the below animes...')
     for r in recommendation['anime_id']:
