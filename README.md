@@ -25,10 +25,10 @@ Contain basic information of the anime. Indexed by 'anime_id', followed by the n
 
 ### anime_genre.csv
 Data file generated from Anime.csv for similarity distance measure. Genre and type columns are One-Hot Encoded and rating is scaled to 0-1, indexed by 'anime_id'. <br>
-<img src="image/anime_genre.png" width="600">
+<img src="image/anime_genre_csv.png" width="600">
 
 ### rating.csv
-No preprocessing on this datafile.
+No preprocessing on this datafile.<br>
 <img src="image/rating_csv.png" width="300">
 
 
