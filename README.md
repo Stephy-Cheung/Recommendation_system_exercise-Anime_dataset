@@ -21,11 +21,11 @@ Three data file prepared to develop the streamlit application.
 
 ### anime.csv
 Contain basic information of the anime. Indexed by 'anime_id', followed by the name, genre and rating. <br>
-<img src="image/anime_csv.png" width="600">
+<img src="image/anime_csv.png" width="800">
 
 ### anime_genre.csv
 Data file generated from Anime.csv for similarity distance measure. Genre and type columns are One-Hot Encoded and rating is scaled to 0-1, indexed by 'anime_id'. <br>
-<img src="image/anime_genre_csv.png" width="600">
+<img src="image/anime_genre_csv.png" width="800">
 
 ### rating.csv
 No preprocessing on this datafile.<br>
@@ -46,7 +46,7 @@ Anime that haven't been watched will be on top. <br>
 
 Suggestion for re-watch will be at the bottom. <br>
 
-<img src="image/Example.png" width="600">
+<img src="image/Example.png" width="800">
 
 ## Next Step:
 1. User Input: 
