@@ -3,7 +3,7 @@
 # Exercise-Streamlit_Anime_dataset
 
 ## Objective
-This is an exercise to develop an anime recommendation system. Recommendation will be made base on user favourite anime, user_id and similarity distance measure method. Streamlit will be used for app framework. <br>
+This is an exercise to develop a content based anime recommendation system. Recommendation will be made base on user favourite anime, user_id and similarity distance measure method. Streamlit will be used for data app framework. <br>
 
 'Recommend_app(streamlit)' is code for the Streamlit ap. <br>
 'Preprocessing' is code for the pre-processing on dataset. <br>
