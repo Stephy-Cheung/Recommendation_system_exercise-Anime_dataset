@@ -34,7 +34,7 @@ No preprocessing on this datafile.<br>
 
 ## Application
 User are able to input the below for recommendation. 
-#### - Distance method
+- Distance method
 - Previous favourite anime
 - Number of recommendation wanted
 - user_id 
